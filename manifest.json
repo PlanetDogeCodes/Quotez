@@ -1,0 +1,10 @@
+{
+  "name": "Quotez",
+  "description": "Simple, motivational phrases to help you get through your day",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "quotez.html",
+    "default_icon": "Quotez.png"
+  }
+}
