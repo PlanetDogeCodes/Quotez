@@ -1,5 +1,56 @@
 <html>
   <body>
-    <h1>"Be the change you want to see in the world" -Mahatma Gandhi</h1>
+        <ul id="itemList">
+    <li>If you want to achieve greatness stop asking for permission. ~Anonymous</li>
+    <li>Things work out best for those who make the best of how things work out. ~John Wooden</li>
+    <li>To live a creative life, we must lose our fear of being wrong. ~Anonymous</li>
+    <li>If you are not willing to risk the usual you will have to settle for the ordinary. ~Jim Rohn</li>
+    <li>Trust because you are willing to accept the risk, not because it's safe or certain. ~Anonymous</li>
+    <li>Take up one idea. Make that one idea your life - think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success. ~Swami Vivekananda</li>
+    <li>All our dreams can come true if we have the courage to pursue them. ~Walt Disney</li>
+    <li>Good things come to people who wait, but better things come to those who go out and get them. ~Anonymous</li>
+    <li>If you do what you always did, you will get what you always got. ~Anonymous</li>
+    <li>Success is walking from failure to failure with no loss of enthusiasm. ~Winston Churchill</li>
+    <li>Just when the caterpillar thought the world was ending, he turned into a butterfly. ~Proverb</li>
+    <li>Successful entrepreneurs are givers and not takers of positive energy. ~Anonymous</li>
+    <li>Whenever you see a successful person you only see the public glories, never the private sacrifices to reach them. ~Vaibhav Shah</li>
+    <li>Opportunities don't happen, you create them. ~Chris Grosser</li>
+    <li>Try not to become a person of success, but rather try to become a person of value. ~Albert Einstein</li>
+    <li>Great minds discuss ideas; average minds discuss events; small minds discuss people. ~Eleanor Roosevelt</li>
+    <li>I have not failed. I've just found 10,000 ways that won't work. ~Thomas A. Edison</li>
+    <li>If you don't value your time, neither will others. Stop giving away your time and talents- start charging for it. ~Kim Garst</li>
+    <li>A successful man is one who can lay a firm foundation with the bricks others have thrown at him. ~David Brinkley</li>
+    <li>No one can make you feel inferior without your consent. ~Eleanor Roosevelt</li>
+    <li>The whole secret of a successful life is to find out what is one's destiny to do, and then do it. ~Henry Ford</li>
+    <li>If you're going through hell keep going. ~Winston Churchill</li>
+    <li>The ones who are crazy enough to think they can change the world, are the ones that do. ~Anonymous</li>
+    <li>Don't raise your voice, improve your argument. ~Anonymous</li>
+    <li>What seems to us as bitter trials are often blessings in disguise. ~Oscar Wilde</li>
+    <li>The meaning of life is to find your gift. The purpose of life is to give it away. ~Anonymous</li>
+    <li>The distance between insanity and genius is measured only by success. ~Bruce Feirstein</li>
+    <li>When you stop chasing the wrong things you give the right things a chance to catch you. ~Lolly Daskal</li>
+    <li>Don't be afraid to give up the good to go for the great. ~John D. Rockefeller</li>
+    <li>No masterpiece was ever created by a lazy artist. ~Anonymous</li>
+    <li>Happiness is a butterfly, which when pursued, is always beyond your grasp, but which, if you will sit down quietly, may alight upon you. ~Nathaniel Hawthorne</li>
+    <li>If you can't explain it simply, you don't understand it well enough. ~Albert Einstein</li>
+    <li>Blessed are those who can give without remembering and take without forgetting. ~Anonymous</li>
+    <li>Do one thing every day that scares you. ~Anonymous</li>
+    <li>What's the point of being alive if you don't at least try to do something remarkable. ~Anonymous</li>
+    <li>Life is not about finding yourself. Life is about creating yourself. ~Lolly Daskal</li>
+    <li>Nothing in the world is more common than unsuccessful people
+
+    </ul>
+
+    <button onclick="chooseRandomItem()">Get a New Quote</button>
+
+    <div id="result"></div>
+
+    <script>
+        function chooseRandomItem() {
+            const items = document.querySelectorAll('#itemList li');
+            const randomIndex = Math.floor(Math.random() * items.length);
+            const randomItem = items[randomIndex].textContent;
+            document.getElementById('result').textContent = 'Here you go: ' + randomItem;
+        }
   </body>
 </html>
